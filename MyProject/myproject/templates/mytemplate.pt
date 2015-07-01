@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pyramid web application">
+    <meta name="author" content="Pylons Project">
+    <link rel="shortcut icon" href="${request.static_url('myproject:static/pyramid-16x16.png')}">
+
+    <title>Starter Scaffold for The Pyramid Web Framework</title>
+    
+    <link href="${request.static_url('myproject:static/css/theme.css')}" rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="${request.static_url('myproject:static/lib/socket-io/socket.io.js')}"></script>
+    <script src="${request.static_url('myproject:static/js/main.js')}"></script>
+  </head>
+
+  <body>
+
+    <span>Count</span>
+    <input type="number" id="numberInput"/>
+    <span>time(s).</span>
+    <input type="button" id="countButton" value="Go!"/>
+    
+    <br />
+    <textarea id="logs"></textarea>
+
+  </body>
+</html>
